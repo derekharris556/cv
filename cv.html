@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Derek Harris</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+
+<body>
+    <header>
+        <h1>Derek Harris</h1>
+    <header>
+<hr>
+
+<section>
+    <img src="./background_photo.jpeg" height="=250" width="200" alt="Derek Harris">
+</section>
+<hr>
+
+<section>
+    <h2>Contact Information</h2>
+    <ul>
+        <li>Phone: 501-278-6917</li>
+        <li>Email: derekharris556@icloud.com</li>
+        <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
+        <li><a href="https://github.com/derekharris556">GitHub</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Objective Summary</h2>
+    <p>
+        I am a highly motivated individual looking to launch a career in software development.
+        <br>
+        Currently enrolled in the Springboard Enterprise Software Development Bootcamp, 
+        <br>
+        while also pursuing a Team Treehouse Python Techdegree.
+        <br>
+        I am commited to applying my growing knowledge and skills to contribute to a dynamic team.
+    </p>
+</section>
+<hr>
+
+<!-- update this info as courses are completed-->
+<section>
+    <h2>Education</h2>
+    <table>
+        <tr>
+            <th>Institute</th>
+            <th>Education Type</th>
+            <th>Completion Date</th>
+        </tr>
+        <tr>
+            <td>Midland High School</td>
+            <td>High School Diploma</td>
+            <td>2006</td>
+        </tr>
+        <tr>
+            <td>Springboard</td>
+            <td>Enterprise Software Development Bootcamp</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Team Treehouse</td>
+            <td>Python Techdegree</td>
+            <td>In Progress</td>
+        </tr>
+    </table>
+<hr>
+
+<!-- Add a skills section with languages and Github as skills
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>GitHub</li>
+    </ul>
+</section>
+<hr>
+    -->
+
+<section>
+    <h2>Work Experience</h2>
+    <ul>
+        <li><h3>Walmart - 2018-Present</h3></li>
+            <ul>
+                <li>Worked in Non-Conveyable, Pick, Receiving and currently Shipping</li>
+                <li>Certified Trainer for 3 of those areas</li>
+                <li>Associate of the Month <em>(Within 3 months of Hire, 1st and
+                only associate to earn in less than 12 months)</em></li>
+            </ul>
+        <li><h3>BLK Quarries - 2008-2018</h3></li>
+            <ul>
+                <li>Worked as a Heavy Equipment Operator</li>
+                <li>Responsible for Plant Maintenance</li>
+                <li>CPR and First-Aid Certified</li>
+            </ul>
+    </ul>
+<hr>
+
+<section>
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Spending time with my wife, 5 kids and dogs!</li>
+        <li>Playing guitar</li>
+        <li>Running</li>
+        <li>Archery</li>
+    </ul>
+</section>
+<hr>
+
+<h2>Contact Me</h2>
+
+<form action="#">
+    
+        <label for="name">Name: </label>
+        <input 
+        placeholder="Your Name" 
+        type="text" 
+        name="name" 
+        id="name" 
+        required
+        >
+    <br>
+        <label for="email">Email: </label>
+        <input 
+        placeholder="example@mail.com" 
+        type="text" 
+        name="email" 
+        id="email" 
+        required
+        >
+    <br>
+        <label for="tel">Phone Number: </label>
+        <input 
+        placeholder="10 Digit Phone Number" 
+        type="tel" 
+        name="phone" 
+        id="phone" 
+        minlength="10"
+        maxlength="10" 
+        required
+        >
+    <br>
+        <label for="message">Reason For Contact: </label>
+        <textarea 
+        placeholder="200 Characters Maximum" 
+        id="messaage" 
+        rows="1" 
+        maxlength="200">
+        </textarea>
+    <br>
+        <label for="refmethod">How did you hear about me? </label>
+        <select name="refmethod" id="refmethod">
+            <option value="friend">Friend</option>
+            <option value="linkedIn">LinkedIn</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="other">Other</option>
+        </select>
+    <br>
+        <label for="contactmethod">Preferred Contact Method: </label>
+        <label for="email">Email</label>
+        <input 
+        type="radio" 
+        name="contactmethod" 
+        id="email" 
+        value="email"
+        >
+
+        <label for="phone">Phone</label>
+        <input 
+        type="radio" 
+        name="contactmethod" 
+        id="phone" 
+        value="phone"
+        >        
+    <br>
+
+        <label for="consent">I Agree To Be Contacted : </label>
+        <input 
+        type="checkbox" 
+        name="consent" 
+        id="consent" 
+        value="consent" 
+        required
+        >
+    <br>
+    
+        <button type="submit"><b>SUBMIT</b></button>
+
+</form>
+
+</body>
+</html>
