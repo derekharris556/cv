@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<HTML lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Derek Harris</title>
+    <!--Nosifer text link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <!--Oswald text link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cv.css">
 </head>
 
@@ -12,21 +20,6 @@
         <h1>Derek Harris</h1>
     <header>
 <hr>
-
-<section>
-    <img src="./background_photo.jpeg" height="=250" width="200" alt="Derek Harris">
-</section>
-<hr>
-
-<section>
-    <h2>Contact Information</h2>
-    <ul>
-        <li>Phone: 501-278-6917</li>
-        <li>Email: derekharris556@icloud.com</li>
-        <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
-        <li><a href="https://github.com/derekharris556">GitHub</a></li>
-    </ul>
-</section>
 
 <section>
     <h2>Objective Summary</h2>
@@ -43,46 +36,57 @@
 <hr>
 
 <!-- update this info as courses are completed-->
-<section>
+<section class="education">
     <h2>Education</h2>
-    <table>
-        <tr>
-            <th>Institute</th>
-            <th>Education Type</th>
-            <th>Completion Date</th>
-        </tr>
-        <tr>
-            <td>Midland High School</td>
-            <td>High School Diploma</td>
-            <td>2006</td>
-        </tr>
-        <tr>
-            <td>Springboard</td>
-            <td>Enterprise Software Development Bootcamp</td>
-            <td>In Progress</td>
-        </tr>
-        <tr>
-            <td>Team Treehouse</td>
-            <td>Python Techdegree</td>
-            <td>In Progress</td>
-        </tr>
-    </table>
+    <class="education">
+        <li><h3>Midland High School</h3></li>
+            <ul class="education">
+                <li>Graduated Class in the Class of 2006</li>
+            </ul>
+        <li><h3>Springboard - Software Development Bootcamp</h3></li>
+            <ul class="education">
+                <li>Currently enrolled, expected completion date: Fall 2025</li>
+            </ul>
+        <li><h3>Team Treehouse - Python Techdegree</h3></li>
+            <ul class="education">
+                <li>Currently enrolled, expected completion date: Fall 2025</li>
+            </ul>
 <hr>
 
-<!-- Add a skills section with languages and Github as skills
-<section>
+<!-- Add a skills section table with languages and Github as skills-->
+<!-- list the institute as the heads, with languages and skills descending underneath -->
+</section>
     <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>GitHub</li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Team Treehouse</th>
+                <th>Springboard</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--each tr must have 1st td as the skill from Treehouse, 2nd springboard -->
+            <!--1 tr per 2 skills-->
+            <tr>
+                <td>Python</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>Flask</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>GitHub Version Control</td>
+                <td>React</td>
+            </tr> 
+        </tbody>
+    </table>
 </section>
 <hr>
-    -->
 
 <section>
     <h2>Work Experience</h2>
@@ -105,16 +109,27 @@
 
 <section>
     <h2>Hobbies</h2>
-    <ul>
-        <li>Spending time with my wife, 5 kids and dogs!</li>
+    <ol>
+        <li>Spending time with my wife and 5 kids</li>
         <li>Playing guitar</li>
         <li>Running</li>
         <li>Archery</li>
-    </ul>
+    </ol>
 </section>
 <hr>
 
-<h2>Contact Me</h2>
+<h2 class="contactme">Contact Me</h2>
+
+<img src="./background_photo.jpeg" height="=175" width="150" alt="Derek Harris">
+
+<section class="contact">
+    <ul class="contact">
+        <li>Phone: 501-278-6917</li>
+        <li>Email: derekharris556@icloud.com</li>
+        <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
+        <li><a href="https://github.com/derekharris556">GitHub</a></li>
+    </ul>
+</section>
 
 <form action="#">
     

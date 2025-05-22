@@ -1,0 +1,113 @@
+
+body {
+    color: #8be9fd;
+    background-color: #282a36;
+    font-family: Oswald, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin: 5px;
+}
+
+h1 {
+    background: linear-gradient(to right, black, #d3de02);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+hr {
+    color: #ff5555;
+    width: 100%;
+}
+
+p {
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+    color: #bd93f9;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #6272a4
+}
+
+a:hover {
+    color: hotpink;
+    font-family: Nosifer;
+    font-size:larger;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+tr {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h3 {
+    color: #FFB86C;
+    font-size: 1.6rem;
+}
+
+.education {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+hr {
+    color: #ff5555;
+    width: 100%;
+}
+
+h3.contactheader {
+    text-decoration: underline;
+    text-decoration-color: #50FA7B;
+}
+
+ul.contact {
+    list-style-type: none;
+}
+
+h2.contactme {
+    color: #FF79C6
+}
+
+section.contact {
+    color: #BD93F9;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #50fa7b;
+    color: #282a36;
+    font-family: Nosifer;
+    font-size: larger;
+}
+
+form {
+    color: #BD93F9;
+    font-size: 1.2rem;
+}
