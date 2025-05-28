@@ -11,7 +11,7 @@ body {
 h1 {
     background: linear-gradient(to right,#BD93F9, #282a36, #BD93F9);
     text-align: center;
-    color: #ff5555;
+    color: red;
     font-size: 6rem;
     font-weight: 300;
     padding: 0;
@@ -52,6 +52,7 @@ table {
 }
 
 th {
+    color: #50FA7B;
     text-decoration: underline;
     text-align: center;
     font-size: 1.4rem;
@@ -59,6 +60,7 @@ th {
 
 tr {
     text-align: center;
+    color: #F1FA8C;
     font-size: 1rem;
     font-weight: 400;
 }
@@ -99,6 +101,10 @@ h2.contactme {
 section.contact {
     color: #BD93F9;
     font-size: 1.2rem;
+}
+
+a:visited {
+    color: #BF93F9;
 }
 
 button:hover {
