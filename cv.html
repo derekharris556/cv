@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="cv.css">
 </head>
 
-<body>
-    <header>
-        <h1>Derek Harris</h1>
-    <header>
+<main>
+
+<header class="header">
+    <h1 >Derek Harris</h1>
+</header>
+
 <hr>
 
-<section>
+<section class="objective">
     <h2>Objective Summary</h2>
     <p>
         I am a highly motivated individual looking to launch a career in software development.
@@ -38,24 +40,26 @@
 <!-- update this info as courses are completed-->
 <section class="education">
     <h2>Education</h2>
-    <ul class="education">
+    <ul>
         <li><h3>Midland High School</h3></li>
-            <ul class="education">
+            <ul>
                 <li>Graduated Class in the Class of 2006</li>
             </ul>
         <li><h3>Springboard - Software Development Bootcamp</h3></li>
-            <ul class="education">
+            <ul>
                 <li>Currently enrolled, expected completion date: Fall 2025</li>
             </ul>
         <li><h3>Team Treehouse - Python Techdegree</h3></li>
-            <ul class="education">
+            <ul>
                 <li>Currently enrolled, expected completion date: Fall 2025</li>
             </ul>
+    </ul>
+</section>
 <hr>
 
 <!-- Add a skills section table with languages and Github as skills-->
 <!-- list the institute as the heads, with languages and skills descending underneath -->
-</section>
+<section class="skills">
     <h2>Skills</h2>
     <table class="skills">
         <thead>
@@ -88,7 +92,7 @@
 </section>
 <hr>
 
-<section>
+<section class="work">
     <h2>Work Experience</h2>
     <ul>
         <li><h3>Walmart - 2018-Present</h3></li>
@@ -105,9 +109,10 @@
                 <li>CPR and First-Aid Certified</li>
             </ul>
     </ul>
+</section>
 <hr>
 
-<section>
+<section class="hobbies">
     <h2>Hobbies</h2>
     <ol>
         <li>Spending time with my wife and 5 kids</li>
@@ -118,20 +123,21 @@
 </section>
 <hr>
 
+<section id="contact">
+
 <h2 class="contactme">Contact Me</h2>
 
-<img src="./background_photo.jpeg" height="=175" width="150" alt="Derek Harris">
+<img id="selfie" src="./background_photo.jpeg" height="=250" width="250" alt="Derek Harris">
 
-<section class="contact">
     <ul class="contact">
         <li>Phone: 501-278-6917</li>
         <li>Email: derekharris556@icloud.com</li>
         <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
         <li><a href="https://github.com/derekharris556">GitHub</a></li>
     </ul>
-</section>
 
-<form action="#">
+
+<form class='contact' action="#">
         <label for="name">Name: </label>
         <input 
         placeholder="Your Name" 
@@ -162,11 +168,12 @@
         >
     <br>
         <label for="message">Reason For Contact: </label>
-        <textarea 
-        placeholder="200 Characters Maximum" 
+        <textarea
+        placeholder="200 Characters Max" 
         id="messaage" 
         rows="1" 
-        maxlength="200">
+        maxlength="200"
+        >
         </textarea>
     <br>
         <label for="refmethod">How did you hear about me? </label>
@@ -205,8 +212,11 @@
         >
     <br>
     
-        <button type="submit"><b>SUBMIT</b></button>
+    <button type="submit"><b>SUBMIT</b></button>
 </form>
+</section>
 
+
+</main>
 </body>
 </html>
