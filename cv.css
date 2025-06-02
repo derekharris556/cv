@@ -128,8 +128,13 @@ h3 {
 
 .work {
     margin: 30px 0;
+    font-size: 1.2rem;
 }
 
+h3.work {
+    color: #FFCA80;
+    font-size: 1.4rem;
+}
 /*  */
 /* Hobbies Section */
 
@@ -159,7 +164,8 @@ h3 {
 
 ul.contact li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
     font-size: 1.2rem;
 }
 
@@ -190,6 +196,12 @@ ul.contact {
     font-size: 1.5rem;
     font-weight: 450;
 }
+
+/* .contact ul li {
+    display: inline;
+    margin-left: 40px;
+    margin-right: 40px;
+} */
 
 ul li a:hover {
     color: #FF80BF;
