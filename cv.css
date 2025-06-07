@@ -40,7 +40,7 @@ hr {
 
 /* Header and header elements styling */
 
-.header {
+#header {
     padding: 2px 20px;
     margin: 0;
     width: 100%;
@@ -48,7 +48,8 @@ hr {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    align-content: center;
+    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -56,25 +57,26 @@ hr {
 
 /* Derek Harris */
 #h1 {
-    margin: 0;
+    margin: 0 ;
+    padding-left: 20px;
     padding-right: 20px;
     color: rgb(160, 0, 0);
+    text-align: center;
     font-size: 4.5rem;
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: Splash;
     text-shadow: white 3px 3px 5px, #FF80BF 3px 3px 5px, #BD93F9 3px 3px 5px;
-    display: inline-block;
     order: 2;
 }
 
 #selfie {
+    
     border-radius: 50%;
     border-style: solid;
     border-color: rgb(160, 0, 0);
     border-width: 5px;
-    display: inline-block;
-    order: 1;
+    order: 0;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -107,6 +109,22 @@ hr {
 /* Objective section styles */
 #objective {
     margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+/* selfie to the top left */
+#objective #selfie {
+    align-self: flex-start;
+}
+
+#objective .objective-text {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
 }
 
 #objective p {
@@ -294,12 +312,11 @@ hr {
     display:flex;
     flex-flow: column;
     justify-content: center;
-    /* position: relative; */
     z-index: 2;
     background-image: url(./bat_logo.png);
     background-repeat: no-repeat;
-    background-position: right 8% top -10%;
-    background-size: 450px 450px;
+    background-position: right 0% top -15%;
+    background-size: 500px 500px;
     background-color: black;
     padding: 30px;
     color: #9580FF;
@@ -340,7 +357,7 @@ hr {
     text-decoration: #FF80BF underline;
     font-size: 5rem;
     text-align: left;
-    margin-top: 0;
+    margin-top: 40px;
     margin-bottom: 80px;
 }
 
@@ -362,14 +379,13 @@ ul li a:visited {
 
 #contact-form button {
     background-color:#ff5555;
+    border-width: 4px;
 }
 
 #contact-form button:hover {
     background-color: #8AFF80;
     color: #282a36;
     font-family: Nosifer;
-    font-size: larger;
-    box-sizing: content-box;
 }
 
 #contact-form input, textarea {
