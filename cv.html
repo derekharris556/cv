@@ -12,19 +12,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--Splash text link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cv.css">
 </head>
 
 <body>
 <main>
 
-<header class="header">
-    <h1 >Derek Harris</h1>
-</header>
+<div id="header-container">
+    <!-- hr creates the gradient border at top of header -->
+    <hr id="header-hr-top">
 
-<!-- <hr> -->
+        <header class="header">
+            <h1 id="h1" >Derek Harris</h1>
+            <!-- photo of me -->
+            <img id="selfie" src="./background_photo.jpeg" height="=250" width="250" alt="Derek Harris">
+        </header>
+        
+    <!-- hr creates the gradient border at bottom of header -->
+    <hr id="header-hr-bottom">
+</div>
 
-<section class="objective">
+
+<section id="objective">
     <h2>Objective Summary</h2>
     <p>
         I am a highly motivated individual looking to launch a career in software development.
@@ -38,31 +51,60 @@
 </section>
 <hr>
 
-<!-- update this info as courses are completed-->
-<section class="education">
-    <h2>Education</h2>
-    <ul>
-        <li><h3>Midland High School</h3></li>
+<!-- parent container for work and education for css -->
+<div id="education-work-container">
+
+    <!-- update this info as courses are completed-->
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li><h3>Midland High School</h3></li>
+                <ul>
+                    <li>Graduated Class in the Class of 2006</li>
+                </ul>
+            <li><h3>Springboard - Software Development Bootcamp</h3></li>
+                <ul>
+                    <li>Currently enrolled, expected completion date: Fall 2025</li>
+                </ul>
+            <li><h3>Team Treehouse - Python Techdegree</h3></li>
+                <ul>
+                    <li>Currently enrolled, expected completion date: Fall 2025</li>
+                </ul>
+        </ul>
+    </section>
+
+<!-- Work Experience Section -->
+
+    <section id="work-container">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>
+                <h3>Walmart - 2018-Present</h3>
+            </li>
             <ul>
-                <li>Graduated Class in the Class of 2006</li>
+                <li>Worked in Non-Conveyable, Pick, Receiving and currently Shipping</li>
+                <li>Certified Trainer for 3 of those areas</li>
+                <li>Associate of the Month <em>(Within 3 months of Hire, 1st and
+                        only associate to earn in less than 12 months)</em></li>
             </ul>
-        <li><h3>Springboard - Software Development Bootcamp</h3></li>
+            <li>
+                <h3>BLK Quarries - 2008-2018</h3>
+            </li>
             <ul>
-                <li>Currently enrolled, expected completion date: Fall 2025</li>
+                <li>Worked as a Heavy Equipment Operator</li>
+                <li>Responsible for Plant Maintenance</li>
             </ul>
-        <li><h3>Team Treehouse - Python Techdegree</h3></li>
-            <ul>
-                <li>Currently enrolled, expected completion date: Fall 2025</li>
-            </ul>
-    </ul>
-</section>
+        </ul>
+    </section>
+</div>
+
 <hr>
 
 <!-- Add a skills section table with languages and Github as skills-->
 <!-- list the institute as the heads, with languages and skills descending underneath -->
-<section class="skills">
+<section id="skills">
     <h2>Skills</h2>
-    <table class="skills">
+    <table class="table">
         <thead>
             <tr>
                 <th>Team Treehouse</th>
@@ -93,27 +135,8 @@
 </section>
 <hr>
 
-<section class="work">
-    <h2>Work Experience</h2>
-    <ul>
-        <li><h3>Walmart - 2018-Present</h3></li>
-            <ul>
-                <li>Worked in Non-Conveyable, Pick, Receiving and currently Shipping</li>
-                <li>Certified Trainer for 3 of those areas</li>
-                <li>Associate of the Month <em>(Within 3 months of Hire, 1st and
-                only associate to earn in less than 12 months)</em></li>
-            </ul>
-        <li><h3>BLK Quarries - 2008-2018</h3></li>
-            <ul>
-                <li>Worked as a Heavy Equipment Operator</li>
-                <li>Responsible for Plant Maintenance</li>
-                <li>CPR and First-Aid Certified</li>
-            </ul>
-    </ul>
-</section>
-<hr>
-
-<section class="hobbies">
+<!-- Hobbies Section -->
+<section id="hobbies">
     <h2>Hobbies</h2>
     <ol>
         <li>Spending time with my wife and 5 kids</li>
@@ -122,100 +145,124 @@
         <li>Archery</li>
     </ol>
 </section>
-<hr>
-
-<section id="contact">
-
-<h2 class="contactme">Contact Me</h2>
-
-<img id="selfie" src="./background_photo.jpeg" height="=250" width="250" alt="Derek Harris">
-
-    <ul class="contact">
-        <li>Phone: 501-278-6917</li>
-        <li>Email: derekharris556@icloud.com</li>
-        <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
-        <li><a href="https://github.com/derekharris556">GitHub</a></li>
-    </ul>
 
 
-<form class='contact' action="#">
-        <label for="name">Name: </label>
-        <input 
-        placeholder="Your Name" 
-        type="text" 
-        name="name" 
-        id="name" 
-        required
-        >
-    <br>
-        <label for="email">Email: </label>
-        <input 
-        placeholder="example@mail.com" 
-        type="text" 
-        name="email" 
-        id="email" 
-        required
-        >
-    <br>
-        <label for="tel">Phone Number: </label>
-        <input 
-        placeholder="10 Digit Phone Number" 
-        type="tel" 
-        name="phone" 
-        id="phone" 
-        minlength="10"
-        maxlength="10" 
-        required
-        >
-    <br>
-        <label for="message">Reason For Contact: </label>
-        <textarea
-        placeholder="200 Characters Max"
-        id="messaage"
-        rows="1"
-        maxlength="200"
-        >
-        </textarea>
-    <br>
-        <label for="refmethod">How did you hear about me? </label>
-        <select name="refmethod" id="refmethod">
-            <option value="friend">Friend</option>
-            <option value="linkedIn">LinkedIn</option>
-            <option value="socialmedia">Social Media</option>
-            <option value="other">Other</option>
-        </select>
-    <br>
-        <label for="contactmethod">Preferred Contact Method: </label>
-        <label for="email">Email</label>
-        <input 
-        type="radio"
-        name="contactmethod" 
-        id="email" 
-        value="email"
-        >
 
-        <label for="phone">Phone</label>
-        <input 
-        type="radio" 
-        name="contactmethod" 
-        id="phone" 
-        value="phone"
-        >        
-    <br>
+<!-- hr creates the gradient border at top of contact section -->
+<hr id="contact-hr-top">
 
-        <label for="consent">I Agree To Be Contacted : </label>
-        <input 
-        type="checkbox" 
-        name="consent" 
-        id="consent" 
-        value="consent" 
-        required
-        >
-    <br>
-    
-    <button type="submit"><b>SUBMIT</b></button>
-</form>
+<!-- CONTACT ME SECTION -->
+<section id="contact-container">
+
+    <h2 class="contactme">Contact Me</h2>
+<!-- creates a container for entire bottom section of page for css positioning -->
+
+    <div class="contact-content">
+
+<!-- Contact Form -->
+        <form id="contact-form" action="#">
+                <label for="name">Name: </label>
+                <input 
+                placeholder="Your Name" 
+                type="text" 
+                name="name" 
+                id="name" 
+                required
+                >
+            <br>
+
+                <label for="email-input">Email: </label>
+                <input 
+                placeholder="example@mail.com" 
+                type="text" 
+                name="email" 
+                id="email-input" 
+                required
+                >
+            <br>
+
+                <label for="tel-input">Phone Number: </label>
+                <input 
+                placeholder="10 Digit Phone Number" 
+                type="tel" 
+                name="phone" 
+                id="tel-input" 
+                minlength="10"
+                maxlength="10" 
+                required
+                >
+            <br>
+
+                <label for="message-text">Reason For Contact: </label>
+                <textarea
+                placeholder="200 Characters Max"
+                id="message-text"
+                rows="1"
+                maxlength="200"
+                >
+                </textarea>
+            <br>
+
+                <label for="refmethod">How did you hear about me? </label>
+                <select name="refmethod" id="refmethod">
+                    <option value="friend">Friend</option>
+                    <option value="linkedIn">LinkedIn</option>
+                    <option value="socialmedia">Social Media</option>
+                    <option value="other">Other</option>
+                </select>
+            <br>
+                <label for="contactmethod">Preferred Contact Method: </label>
+                <label for="email-button">Email</label>
+                <input 
+                type="radio"
+                name="contactmethod" 
+                id="email-button" 
+                value="email"
+                >
+
+                <label for="tel-button">Phone</label>
+                <input 
+                type="radio" 
+                name="contactmethod" 
+                id="tel-button" 
+                value="phone"
+                >        
+            <br>
+
+                <label for="consent">I Agree To Be Contacted : </label>
+                <input 
+                type="checkbox" 
+                name="consent" 
+                id="consent" 
+                value="consent" 
+                required
+                >
+            <br>
+            
+            <button type="submit"><b>SUBMIT</b></button>
+        </form>
+
+<!-- CSS Validation Proof-->
+        <p id="css-validation">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+
+        <!-- contact info list -->
+        <ul id="contact-info">
+            <li>Email: derekharris556@icloud.com</li>
+            <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
+            <li><a href="https://github.com/derekharris556">GitHub</a></li>
+            <li>Phone: 501-278-6917</li>
+        </ul>
+    </div>
 </section>
+
+
+<!-- HR to form the bottom gradient border -->
+<hr id="contact-hr-bottom">
 
 
 </main>
