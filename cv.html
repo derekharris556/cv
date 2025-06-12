@@ -23,31 +23,31 @@
 <main>
 
 <div id="header-container">
-    <!-- hr creates the gradient border at top of header -->
-    <hr id="header-hr-top">
+
 
         <header id="header">
             <h1 id="h1" >Derek Harris</h1>
         </header>
         
     <!-- hr creates the gradient border at bottom of header -->
-    <hr id="header-hr-bottom">
+    <hr class="Header-hr">
 </div>
 
-
-<section id="objective">
+<!-- .Mobile-div to use flex to center content -->
+<div class="Mobile-div">
+<section class="Objective">
     <!-- photo of me -->
     <img id="selfie" src="./background_photo.jpeg" height="=250" width="250" alt="Derek Harris">
 
-    <div class="objective-text">
+    <div class="Objective-text">
         <h2>Objective Summary</h2>
         <p>
             I am a highly motivated individual looking to launch a career in software development.
-            <!-- <br> -->
+            <br>
             Currently enrolled in the Springboard Enterprise Software Development Bootcamp, 
-            <!-- <br> -->
+            <br>
             while also pursuing a Team Treehouse Python Techdegree.
-            <!-- <br> -->
+            <br>
             I am commited to applying my growing knowledge and skills to contribute to a dynamic team.
         </p>
     </div>
@@ -55,10 +55,10 @@
 <hr>
 
 <!-- parent container for work and education for css -->
-<div id="education-work-container">
+<div class="Education-Work-container">
 
     <!-- update this info as courses are completed-->
-    <section class="education">
+    <section class="Education">
         <h2>Education</h2>
         <ul>
             <li><h3>Midland High School</h3></li>
@@ -78,7 +78,7 @@
 
 <!-- Work Experience Section -->
 
-    <section id="work-container">
+    <section class="Work">
         <h2>Work Experience</h2>
         <ul>
             <li>
@@ -105,9 +105,9 @@
 
 <!-- Add a skills section table with languages and Github as skills-->
 <!-- list the institute as the heads, with languages and skills descending underneath -->
-<section id="skills">
+<section class="Skills">
     <h2>Skills</h2>
-    <table class="table">
+    <table class="Skills-table">
         <thead>
             <tr>
                 <th>Team Treehouse</th>
@@ -139,7 +139,7 @@
 <hr>
 
 <!-- Hobbies Section -->
-<section id="hobbies">
+<section class="Hobbies">
     <h2>Hobbies</h2>
     <ol>
         <li>Spending time with my wife and 5 kids</li>
@@ -152,18 +152,18 @@
 
 
 <!-- hr creates the gradient border at top of contact section -->
-<hr id="contact-hr-top">
+<hr>
 
 <!-- CONTACT ME SECTION -->
-<section id="contact-container">
+<section class="Contact">
 
-    <h2 class="contactme">Contact Me</h2>
+    <h2 class="Contact-h2">Contact Me</h2>
 <!-- creates a container for entire bottom section of page for css positioning -->
 
-    <div class="contact-content">
+    <div class="Contact-content">
 
 <!-- Contact Form -->
-        <form id="contact-form" action="#">
+        <form class="Contact-form" action="#">
                 <label for="name">Name: </label>
                 <input 
                 placeholder="Your Name" 
@@ -215,6 +215,7 @@
                 </select>
             <br>
                 <label for="contactmethod">Preferred Contact Method: </label>
+                <br>
                 <label for="email-button">Email</label>
                 <input 
                 type="radio"
@@ -242,7 +243,7 @@
                 >
             <br>
             
-            <button type="submit"><b>SUBMIT</b></button>
+            <button type="submit" class="Contact-button"><b>SUBMIT</b></button>
         </form>
 
 <!-- CSS Validation Proof-->
@@ -254,7 +255,7 @@
         </p>
 
         <!-- contact info list -->
-        <ul id="contact-info">
+        <ul class="Contact-info">
             <li>Email: derekharris556@icloud.com</li>
             <li><a href="https://www.linkedin.com/in/derek-harris-670093361/">LinkedIn</a></li>
             <li><a href="https://github.com/derekharris556">GitHub</a></li>
@@ -262,10 +263,12 @@
         </ul>
     </div>
 </section>
+<!-- .Mobile-div ENDS HERE -->
+</div> 
 
 
 <!-- HR to form the bottom gradient border -->
-<hr id="contact-hr-bottom">
+<!-- <hr id="contact-hr-bottom"> -->
 
 
 </main>

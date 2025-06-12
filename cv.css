@@ -4,408 +4,642 @@
 /* margin and padding are set to 0 
 */
 body {
-    color: #80FFEA;
-    background-color: #282a36;
-    font-family: Oswald, sans-serif;
-    line-height: 1.75;
-    margin: 2px;
-    margin-left: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    width: 100%;
-    height: 100%;
+  color: #80ffea;
+  background-color: #282a36;
+  font-family: Oswald, sans-serif;
+  line-height: 1.75;
+  margin: 8px;
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
 h3 {
-    color: #FFCA80;
+  color: #ffca80;
 }
 
 h2 {
-    text-align: center;
-    color: #9580FF;
-    font-size: 2rem;
+  text-align: center;
+  color: #9580ff;
+  font-size: 2rem;
 }
-
 
 /* All Dracula Colors as Gradient */
 hr {
-    height: 2px;
-    background: linear-gradient(to right, #ff5555, #FF80BF, #FFCA80, #FFFF80, #8AFF80, #80FFEA, #BD93F9);
-    width: 100%;
-    margin: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #ff5555,
+    #ff80bf,
+    #ffca80,
+    #ffff80,
+    #8aff80,
+    #80ffea,
+    #bd93f9
+  );
+  width: 100%;
+  margin: 0;
 }
-
-
 
 /* Header and header elements styling */
 
 #header {
-    padding: 2px 20px;
-    margin: 0;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  padding: 2px 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  /* align-items: center; */
+  /* align-content: center; */
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 /* Derek Harris */
 #h1 {
-    margin: 0 ;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: rgb(160, 0, 0);
-    text-align: center;
-    font-size: 4.5rem;
-    font-weight: 300;
-    font-size: 6rem;
-    font-family: Splash;
-    text-shadow: white 3px 3px 5px, #FF80BF 3px 3px 5px, #BD93F9 3px 3px 5px;
-    order: 2;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(160, 0, 0);
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 300;
+  font-size: 6rem;
+  font-family: Splash;
+  text-shadow: white 3px 3px 5px, #ff80bf 3px 3px 5px, #bd93f9 3px 3px 5px;
+  order: 2;
 }
 
 #selfie {
-    
-    border-radius: 50%;
-    border-style: solid;
-    border-color: rgb(160, 0, 0);
-    border-width: 5px;
-    order: 0;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgb(160, 0, 0);
+  border-width: 5px;
+  order: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* container for all of  */
+/* container for all of Header and H1 elements */
 #header-container {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
-
-#header-hr-top {
-    margin: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #ff5555, #FF80BF, #FFCA80, #FFFF80, #8AFF80, #80FFEA, #BD93F9);
-
-}
-
-#header-hr-bottom {
-    margin: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #ff5555, #FF80BF, #FFCA80, #FFFF80, #8AFF80, #80FFEA, #BD93F9);
-
-}
-
 
 /* Objective section styles */
-#objective {
-    margin-bottom: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: ; */
+.Objective {
+  margin-bottom: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* selfie to the top left */
-#objective #selfie {
-    align-self: flex-start;
+#selfie {
+  align-self: flex-start;
 }
 
-#objective .objective-text {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
+.Objective .Objective-text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 
-#objective p {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight:300
+.Objective p {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
-#objective h2 {
-    text-align: center;
-    color: #9580FF;
-    font-size: 3.8rem;
+.Objective h2 {
+  text-align: center;
+  color: #9580ff;
+  font-size: 3.8rem;
 }
-
 
 /* Skills section & table styles */
 /*  */
 
-#skills {
-    margin: 30px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.Skills {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#skills h2 {
-    text-align: center;
-    font-size: 4rem;
-    padding-left: 30px;
-    color:#80FFEA;
+.Skills h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding-left: 30px;
+  color: #80ffea;
 }
 
-#skills th {
-    color: #8AFF80;
-    text-decoration: underline;
-    text-align: center;
-    font-size: 1.4rem;
+.Skills-table th {
+  color: #8aff80;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
-#skills tr {
-    text-align: center;
-    color: #FFFF80;
-    font-size: 1.2rem;
-    font-weight: 400;
+.Skills-table tr {
+  text-align: center;
+  color: #ffff80;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-#skills table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+.Skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /* work and education parent container */
 /* work and education will appear SxS evenly consuming page space */
-#education-work-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.Education-Work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-
-#education-work-container ul {
-    margin-bottom: 10px;
-    padding: 0;
-    font-size: 1.2rem;
-    font-weight: 400;
-    list-style-type: none;
-    text-align: center;
-    box-sizing: border-box;
-    
+.Education-Work-container ul {
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  list-style-type: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 /* Education Section */
 
-.education {
-    box-sizing: border-box;
-    list-style-type: none;
-    margin: 0;
-    display: inline-block;
-    text-align: center;
-    width: 50%;
-    border-right: 3px solid #FFFF80;
+.Education {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  border-right: 3px solid #ffff80;
 }
 
-.education h2 {
-    text-align: center;
-    color: #9580FF;
-    font-size: 2rem;
-    margin: 0;
+.Education h2 {
+  text-align: center;
+  color: #9580ff;
+  font-size: 2rem;
+  margin: 0;
 }
 
-.education ul {
-    border-right: none;
+.Education ul {
+  border-right: none;
 }
 
-.education ul li ul {
-    padding: 0;
+.Education ul li ul {
+  padding: 0;
 }
 
 /* Work Exp Section */
 
-#work-container {
-    box-sizing: border-box;
-    width: 50%;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
+.Work {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
-#work-container ul {
-    padding: 0 10px;
-    margin-top: 0;
+.Work ul {
+  padding: 0 10px;
+  margin-top: 0;
 }
 
-#work-container h2 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.Work h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-#work-container h3 {
-    color: #FFCA80;
-    font-size: 1.4rem;
+.Work h3 {
+  color: #ffca80;
+  font-size: 1.4rem;
 }
 
 /*  */
 /* Hobbies Section */
 
-#hobbies {
-    margin: 30px 0;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.Hobbies {
+  margin: 30px 0;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#hobbies h2 {
-    font-size: 6rem;
-    margin: 0;
-    text-shadow:#FF80BF 3px 3px 5px;
-    order: 2;
+.Hobbies h2 {
+  font-size: 6rem;
+  margin: 0;
+  text-shadow: #ff80bf 3px 3px 5px;
+  order: 2;
 }
 
-#hobbies ol {
-    margin: 0;
-    list-style-type: upper-roman;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #8AFF80;
-    text-shadow: black 3px 3px 5px;
-    order: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+.Hobbies ol {
+  margin: 0;
+  list-style-type: upper-roman;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #8aff80;
+  text-shadow: black 3px 3px 5px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
-
-
 
 /* Bottom Contact Me Section */
-#contact-hr-top {
-    margin: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #ff5555, #FF80BF, #FFCA80, #FFFF80, #8AFF80, #80FFEA, #BD93F9);
-}
+/*  */
 
 /* Contact Me Section Parent Container */
 
-#contact-container {
-    /* min-height: 505px; */
-    display:flex;
-    flex-flow: column;
-    justify-content: center;
-    z-index: 2;
-    background-image: url(./bat_logo.png);
-    background-repeat: no-repeat;
-    background-position: right 0% top -15%;
-    background-size: 500px 500px;
-    background-color: black;
-    padding: 30px;
-    color: #9580FF;
-    font-size: 1.2rem;
+.Contact {
+  /* min-height: 505px; */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  z-index: 2;
+  background-image: url(./bat_logo.png);
+  background-repeat: no-repeat;
+  background-position: right 0% top -15%;
+  background-size: 500px 500px;
+  background-color: black;
+  padding: 30px;
+  color: #9580ff;
+  font-size: 1.2rem;
 }
 
-.contact-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 100%;
+/* Contact Me content */
+.Contact-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
 }
 
-
-#contact-info {
-    list-style-type: none;
-    text-align: right;
-    padding-left: 0;
-    font-size: 1.5rem;
-    font-weight: 450;
-    order: 2;
+.Contact-info {
+  list-style-type: none;
+  text-align: right;
+  padding-left: 0;
+  font-size: 1.5rem;
+  font-weight: 450;
+  order: 2;
 }
 
-#contact-form {
-    order: 0;
-    margin-bottom: 0;
-    padding-bottom: 10px;
-    color: #9580FF;
-    font-size: 1.5rem;
-    line-height: 1.8;
-    border: 5px;
+.Contact-form {
+  order: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  color: #9580ff;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  border: 5px;
 }
 
-#contact-container h2 {
-    color: #FF80BF;
-    text-shadow: #BD93F9 3px 3px 5px;
-    text-decoration: #FF80BF underline;
-    font-size: 5rem;
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 80px;
+.Contact h2 {
+  color: #ff80bf;
+  text-shadow: #bd93f9 3px 3px 5px;
+  text-decoration: #ff80bf underline;
+  font-size: 5rem;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
-#contact-container a {
-    color: #FF80BF;
-    text-decoration: none;
+.Contact a {
+  color: #9580ff;
+  text-decoration: none;
+  transition: 1s ease;
 }
 
-ul li a:hover {
-    color: #FF80BF;
-    font-family: Nosifer;
-    border: 10px;
-    box-sizing: border-box;
+.Contact ul li a:hover {
+  color: #ff80bf;
+  /* font-family: Nosifer; */
+  /* border: none;
+  box-sizing: content-box; */
+  transform: scale(1.5);
 }
 
-ul li a:visited {
-    color: #6272a4;
+.Contact ul li a:visited {
+  color: #6272a4;
 }
 
-#contact-form button {
-    background-color:#ff5555;
-    border-width: 4px;
+/* Submit button will swell and change color and font when hovered */
+.Contact-button {
+  background-color: #ff5555;
+  color: black;
+  border-width: 4px;
+  transition: background-color 1s ease-out, transform 1s ease-in;
 }
 
-#contact-form button:hover {
-    background-color: #8AFF80;
-    color: #282a36;
-    font-family: Nosifer;
+.Contact-button:hover {
+  color: #282a36;
+  background-color: #8aff80;
+  transform: scale(1.1);
 }
 
-#contact-form input, textarea {
-    outline: none;
-}
-#contact-form input:focus {
-    border: 6px solid #FF80BF;
+.Contact-form input,
+textarea {
+  outline: none;
 }
 
-#contact-form textarea:focus {
-    border: 6px solid #FF80BF;
+.Contact-form input:focus {
+  border: 6px solid #ff80bf;
+}
+
+.Contact-form textarea:focus {
+  border: 6px solid #ff80bf;
 }
 
 /* Styling for the bottom Gradient Line on the page */
 #hr-contact-bottom {
-    margin: 0;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
+/* Media Queries */
 
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+    background-color: black;
+    line-height: 1.2;
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  /* Hide all horizontal rules except those in the header */
+  hr {
+    display: none;
+  }
+
+  .Mobile-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .Header-hr {
+    display: block;
+    /* position: relative; */
+    z-index: 2;
+  }
+
+  #header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 30px;
+  }
+
+  #header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #selfie {
+    width: 150px;
+    height: 150px;
+    order: 0;
+    align-self: center;
+  }
+
+  .Objective {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #282a36;
+    border: 3px solid #282a36;
+    margin: 20px;
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .Objective h2 {
+    font-size: 2.3rem;
+    order: 1;
+    margin: 0;
+  }
+
+  .Objective p {
+    font-size: 1.1rem;
+    text-align: center;
+    order: 2;
+  }
+
+  .Education-Work-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Education,
+  .Work {
+    background-color: #282a36;
+    border: 3px solid #282a36;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .Education h2,
+  .Work h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .Education h3,
+  .Work h3 {
+    font-size: 1.3rem;
+    color: #ffca80;
+  }
+
+  .Education ul,
+  .Work ul {
+    font-size: 1rem;
+  }
+
+  .Education {
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+
+  .Work {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+
+  .Skills {
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color: #282a36;
+    border: 3px solid #282a36;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px;
+    padding: 30px;
+    margin-right: auto;
+  }
+
+  .Skills h2 {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .Skills-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    line-height: 1.5;
+  }
+
+  .Skills-table th {
+    font-size: 1.2rem;
+    color: #8aff80;
+    text-decoration: underline;
+  }
+
+  .Skills-table tr {
+    font-size: 1rem;
+    color: #ffff80;
+  }
+
+  .Skills-table th:first-child,
+  .Skills-table td:first-child {
+    /* Styles for the first child of the th elements */
+    /* push content to the left for readability */
+    text-align: left;
+  }
+
+  .Skills-table th:last-child,
+  .Skills-table td:last-child {
+    /* Styles for the last child of the th & td elements */
+    /* push content to the right for readability */
+    text-align: right;
+  }
+
+  .Hobbies {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #282a36;
+    border: 3px solid #282a36;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .Hobbies h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    order: 0;
+    text-shadow: none;
+  }
+
+  .Hobbies ol {
+    align-items: flex-start;
+    font-size: 1.2rem;
+  }
+
+  .Contact {
+    padding: 20px;
+    background-color: #282a36;
+    border: 3px solid #282a36;
+    background-image: none;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px;
+  }
+
+  .Contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    text-shadow: none;
+  }
+
+  .Contact-info {
+    order: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .Contact-form {
+    order: 2;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.1rem;
+  }
+
+  #css-validation {
+    order: 4;
+    width: 44px;
+    height: 15.5px;
+  }
+}
