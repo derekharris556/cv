@@ -392,7 +392,6 @@ textarea {
   left: 0;
 }
 
-
 /*  */
 /*  */
 /*  */
@@ -421,7 +420,7 @@ textarea {
   hr {
     display: none;
   }
- /* mobile-div controls the alignment of content on mobile devices */
+  /* mobile-div controls the alignment of content on mobile devices */
   .Mobile-div {
     display: flex;
     flex-direction: column;
@@ -432,7 +431,6 @@ textarea {
 
   .Header-hr {
     display: block;
-    /* position: relative; */
     z-index: 2;
   }
 
@@ -440,9 +438,8 @@ textarea {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 100;
-    margin-bottom: 30px;
+    margin: 0 5px 30px 5px;
   }
 
   #header {
@@ -468,9 +465,9 @@ textarea {
     align-items: flex-start;
     background-color: #282a36;
     border: 3px solid #282a36;
-    margin: 20px;
+    margin: 0;
     margin-top: 10%;
-    padding: 10px;
+    padding-top: 10px;
     border-radius: 15px 15px 15px 15px;
   }
 
@@ -498,8 +495,7 @@ textarea {
     border: 3px solid #282a36;
     border-radius: 15px 15px 15px 15px;
     padding: 0;
-    margin: 0 auto;
-    width: 100%;
+    margin: 10px;
   }
 
   .Education h2,
@@ -526,24 +522,24 @@ textarea {
     margin-top: 20px;
     margin-bottom: 0;
     font-size: 1.1rem;
+    width: 100%;
   }
 
   .Work {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1.1rem;
+    width: 100%;
   }
 
   .Skills {
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-between;
     background-color: #282a36;
     border: 3px solid #282a36;
     border-radius: 15px 15px 15px 15px;
     margin: 20px;
-    padding: 30px;
-    margin-right: auto;
+    width: 100%;
   }
 
   .Skills h2 {
@@ -586,14 +582,16 @@ textarea {
   }
 
   .Hobbies {
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     background-color: #282a36;
     border: 3px solid #282a36;
     border-radius: 15px 15px 15px 15px;
+    width: 100%;
   }
 
   .Hobbies h2 {
@@ -615,7 +613,7 @@ textarea {
     border: 3px solid #282a36;
     background-image: none;
     border-radius: 15px 15px 15px 15px;
-    margin: 20px;
+    margin: 20px 0;
   }
 
   .Contact h2 {
@@ -644,15 +642,12 @@ textarea {
 
   #css-validation {
     order: 4;
-    width: 44px;
-    height: 15.5px;
   }
 }
 
-
 /* Tablet Styles */
+/* General font sizing, margins and flex alignment */
 @media (min-width: 769px) and (max-width: 1024px) {
-
   body {
     font-size: 1.5rem;
     background-color: black;
@@ -689,7 +684,7 @@ textarea {
   }
 
   .Objective p {
-    text-align:right;
+    text-align: right;
     font-size: 1.3rem;
   }
 
@@ -715,7 +710,6 @@ textarea {
     margin: 0;
     text-align: center;
   }
-
 
   .Hobbies {
     background-color: #282a36;
@@ -768,8 +762,5 @@ textarea {
 
   #css-validation {
     order: 1;
-    width: 44px;
-    height: 15.5px;
   }
-
 }

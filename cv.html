@@ -22,9 +22,8 @@
 <body>
 <main>
 
+<!-- Header container to hold header and hr for gradient border -->
 <div id="header-container">
-
-
         <header id="header">
             <h1 id="h1" >Derek Harris</h1>
         </header>
@@ -35,9 +34,9 @@
 
 <!-- .Mobile-div to use flex to center content -->
 <div class="Mobile-div">
-<section class="Objective">
-    <!-- photo of me -->
-    <img id="selfie" src="./background_photo.jpeg" height="=250" width="250" alt="Derek Harris">
+    <section class="Objective">
+        <!-- photo of me -->
+        <img id="selfie" src="./background_photo.jpeg" height="250" width="250" alt="Derek Harris">
 
     <div class="Objective-text">
         <h2>Objective Summary</h2>
@@ -61,18 +60,18 @@
     <section class="Education">
         <h2>Education</h2>
         <ul>
-            <li><h3>Midland High School</h3></li>
-                <ul>
-                    <li>Graduated Class in the Class of 2006</li>
-                </ul>
-            <li><h3>Springboard - Software Development Bootcamp</h3></li>
-                <ul>
-                    <li>Currently enrolled, expected completion date: Fall 2025</li>
-                </ul>
-            <li><h3>Team Treehouse - Python Techdegree</h3></li>
-                <ul>
-                    <li>Currently enrolled, expected completion date: Fall 2025</li>
-                </ul>
+            <li>
+                <h3>Midland High School</h3>
+                Graduated Class in the Class of 2006
+            </li>
+            <li>
+                <h3>Springboard - Software Development Bootcamp</h3>
+                Currently enrolled, expected completion date: Fall 2025
+            </li>
+            <li>
+                <h3>Team Treehouse - Python Techdegree</h3>
+                Currently enrolled, expected completion date: Fall 2025
+            </li>
         </ul>
     </section>
 
@@ -84,19 +83,15 @@
             <li>
                 <h3>Walmart - 2018-Present</h3>
             </li>
-            <ul>
                 <li>Worked in Non-Conveyable, Pick, Receiving and currently Shipping</li>
                 <li>Certified Trainer for 3 of those areas</li>
                 <li>Associate of the Month <em>(Within 3 months of Hire, 1st and
-                        only associate to earn in less than 12 months)</em></li>
-            </ul>
+                    only associate to earn in &lt; 12 months)</em></li>
             <li>
                 <h3>BLK Quarries - 2008-2018</h3>
             </li>
-            <ul>
                 <li>Worked as a Heavy Equipment Operator</li>
                 <li>Responsible for Plant Maintenance</li>
-            </ul>
         </ul>
     </section>
 </div>
@@ -177,7 +172,7 @@
                 <label for="email-input">Email: </label>
                 <input 
                 placeholder="example@mail.com" 
-                type="text" 
+                type="email" 
                 name="email" 
                 id="email-input" 
                 required
@@ -202,8 +197,7 @@
                 id="message-text"
                 rows="1"
                 maxlength="200"
-                >
-                </textarea>
+                ></textarea>
             <br>
 
                 <label for="refmethod">How did you hear about me? </label>
@@ -214,14 +208,17 @@
                     <option value="other">Other</option>
                 </select>
             <br>
-                <label for="contactmethod">Preferred Contact Method: </label>
-                <br>
+            <!-- <fieldset> and <legend> took some digging on MDN and Google -->
+            <!-- W3C would not Validate my HTML without this -->
+            <fieldset>
+                <legend>Preferred Contact Method: </legend>
                 <label for="email-button">Email</label>
                 <input 
                 type="radio"
                 name="contactmethod" 
                 id="email-button" 
                 value="email"
+                required
                 >
 
                 <label for="tel-button">Phone</label>
@@ -230,7 +227,8 @@
                 name="contactmethod" 
                 id="tel-button" 
                 value="phone"
-                >        
+                >
+            </fieldset>
             <br>
 
                 <label for="consent">I Agree To Be Contacted : </label>
@@ -250,7 +248,7 @@
         <p id="css-validation">
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
                 <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Valid CSS!" />
+                    alt="Valid CSS!">
             </a>
         </p>
 
